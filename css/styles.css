@@ -4,8 +4,17 @@
     --main-color: #FFFFFF;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after{box-sizing: inherit;}
+
 body {
     font-family: "Roboto", Tahoma, sans-serif;
+    margin: 0;
 }
 
 .list {
@@ -30,8 +39,16 @@ body {
   }
   
   /*------------index.html-----------*/
+
+  .container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1230px;
+      background-color: tomato;
+  }
 .header {
     background-color: #FFFFFF;
+    
   }
 .header-logo {
     font-family: 'Raleway', Tahoma, sans-serif;
@@ -86,6 +103,8 @@ body {
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -96,16 +115,23 @@ body {
     }
 
 .hero {
+    margin-top: 0;
+    margin-bottom: 94px;
     background-color: #2F303A;
+    text-align: center;
     }
 
 .hero-btn {
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 200px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
@@ -119,9 +145,17 @@ body {
 }
 
 .section, .work {
-    background-color: #FFFFFF;
+    background-color: tomato;
 }
+
+.section-list{
+    padding: 0;
+    margin: 94px;
+}
+
 .section-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -232,6 +266,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    
 }
 
 .section-portfolio-btn:hover,
@@ -264,3 +299,4 @@ body {
     background: #F5F4FA;
     cursor: pointer;
 }
+
