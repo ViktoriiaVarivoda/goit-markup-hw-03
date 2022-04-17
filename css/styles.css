@@ -54,12 +54,18 @@ body {
     display: flex;
   }
 
-  .header-item:not(:last-child){
+   .header-link{
       display: block;
-    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
+    background-color: red;
+   }
+
+   .header-list .header-item:not(:last-child){
+    margin-right: 50px;
+   }
+
+
 
 .header-logo {
     font-family: 'Raleway', Tahoma, sans-serif;
