@@ -386,6 +386,7 @@ color: #212121;
 }
 
 .adress-text {
+    padding-top: 20px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -394,6 +395,7 @@ color: #212121;
 }
 
 .adress-mailto {
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -418,6 +420,7 @@ color: #212121;
 
 
 /*------------portfolio.html-----------*/
+
 .section-portfolio{
     background-color: #FFFFFF;
 }
@@ -426,6 +429,8 @@ color: #212121;
     flex-wrap: wrap;
     
 }
+
+
 
 .section-portfolio-item {
     width: 370px;
@@ -439,7 +444,22 @@ color: #212121;
 
 .section-portfolio-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+} 
+
+
+/*.section-portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
 }
+
+.section-portfolio-item{
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+*/
 
 .section-portfolio-btn:hover,
 .section-portfolio-btn:focus {
@@ -467,6 +487,7 @@ color: #212121;
     display: inline-block;
     padding: 6px 22px;
 
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -477,3 +498,18 @@ color: #212121;
     cursor: pointer;
 }
 
+.section-portfolio-list-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.section-portfolio-list-nav .section-portfolio-item-nav:not(:last-child) {
+    margin-right: 8px;
+}
+
+.cards{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
