@@ -16,6 +16,7 @@ body {
     font-family: "Roboto", Tahoma, sans-serif;
     margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -32,7 +33,6 @@ img
     display: block;
     max-width: 100%;
 }
-
 
 .list {
     list-style: none;
@@ -85,11 +85,11 @@ img
     padding-top: 32px;
     padding-bottom: 32px;
     
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
    }
 
 
@@ -163,7 +163,6 @@ color: #212121;
 }
 
 .hero-title {
-
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -177,7 +176,6 @@ color: #212121;
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    /*margin-bottom: 94px;*/
     background-color: #2F303A;
     text-align: center;
 }
@@ -190,7 +188,6 @@ color: #212121;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
@@ -211,21 +208,11 @@ color: #212121;
 .section-one-list{
     display: flex;
     flex-wrap: nowrap;
-
 }
 
 .section-one, .work {
     background-color: #FFFFFF;
 }
-
-/*.section-one {
-    width: 270px;
-}*/
-
-/*.section-one-list{
-    padding: 0;
-    margin: 94px;
-}*/
 
 .section-one-item {
     width: 270px;
@@ -258,7 +245,6 @@ color: #212121;
     letter-spacing: 0.03em;
     color: var(--header-color);
 }
-
 
 .work{
     padding-top: 0;
@@ -296,7 +282,6 @@ color: #212121;
 
 .team-top-text {
     margin-bottom: 50px;
-    /*padding: 94px;*/
 
     font-size: 36px;
     line-height: 1.12;
@@ -387,6 +372,7 @@ color: #212121;
 
 .adress-text {
     padding-top: 20px;
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -394,8 +380,11 @@ color: #212121;
     color: #FFFFFF;
 }
 
+.footer-contacts {
+    margin-bottom: 9px;
+}
+
 .adress-mailto {
-    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -427,13 +416,11 @@ color: #212121;
 .section-portfolio-list, .section-portfolio-list-nav {
     display: flex;
     flex-wrap: wrap;
-    
-}
-
-
+    padding: 0;
+    }
 
 .section-portfolio-item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -483,7 +470,6 @@ color: #212121;
 
 .section-portfolio-btn{
     border-radius: 4px;
-    min-width: 130px;
     display: inline-block;
     padding: 6px 22px;
 
@@ -502,7 +488,6 @@ color: #212121;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-
 }
 
 .section-portfolio-list-nav .section-portfolio-item-nav:not(:last-child) {
@@ -512,4 +497,13 @@ color: #212121;
 .cards{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+}
+
+.team-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
